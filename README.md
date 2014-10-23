@@ -16,6 +16,7 @@ Sample Output
 
 Note that some of these sequences could form multiple sentences. Only one need be printed.
 
+```
 > assignment-4 1 2 3 4 
 1 - 2 = 3 - 4 
 > assignment-4 1 1 1
@@ -24,3 +25,4 @@ Note that some of these sequences could form multiple sentences. Only one need b
 0 / 18 = 1 - 2 + 1 * 1 
 > assignment-4 2 2 2 
 No equation found 
+```
