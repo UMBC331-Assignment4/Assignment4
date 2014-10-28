@@ -50,7 +50,7 @@
                      (println (infix A) '= (infix B))
                      (quit) ) ) ) ) ) ) )
 
-(de a4 (lst)
+(de assignment4 (lst)
     (unless (equations lst)
-        (println "No equation found.")
+        (println 'No 'equation 'found)
         (quit)))
