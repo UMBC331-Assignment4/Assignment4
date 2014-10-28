@@ -47,4 +47,10 @@
             (for B (expressions (tail (- I) Lst))
                (let? N (eval A)
                   (when (= N (eval B))
-                     (println (infix A) '= (infix B)) ) ) ) ) ) ) )
+                     (println (infix A) '= (infix B))
+                     (quit) ) ) ) ) ) ) )
+
+(de a4 (lst)
+    (unless (equations lst)
+        (println "No equation found.")
+        (quit)))
