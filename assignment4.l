@@ -1,17 +1,17 @@
-; TODO:
-    ; Read command line input
-    ; Print "No equation found" when no valid equations are found
-    ; Cite in proper MLA format
-    ; Add more comments, clean up current comments
+# TODO:
+    # Read command line input
+    # Print "No equation found" when no valid equations are found
+    # Cite in proper MLA format
+    # Add more comments, clean up current comments
 
-; Authors: Eric Hebert, <insert names here>
-; Run with:
-    ; pil assignment4.l
-    ; (equations (1 2 3 4))
+# Authors: Eric Hebert, <insert names here>
+# Run with:
+    # pil assignment4.l
+    # (equations (1 2 3 4))
 
-; This code was derived from http://picolisp.com/wiki/?99pp93
+# This code was derived from http://picolisp.com/wiki/?99pp93
 
-; Converts a list between infix and prefix notation
+# Converts a list between infix and prefix notation
 (de infix (E)
    (if (atom E)
       E
@@ -20,7 +20,7 @@
          (car E)
          (infix (caddr E)) ) ) )
 
-; Generate all possible combinations of the expressions
+# Generate all possible combinations of the expressions
 (de expressions (X)
    (if (cdr X)
       (mapcan
@@ -37,7 +37,7 @@
          (range 1 (dec (length X))) )
       (list (car X)) ) )
 
-; Find all valid expressions that evaluate to true
+# Find all valid expressions that evaluate to true
 (de equations (Lst)
    (use /
       (redef / (A B)
