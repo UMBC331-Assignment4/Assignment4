@@ -6,7 +6,7 @@
 
 ; Authors: Eric Hebert, <insert names here>
 ; Run with:
-    ; pil assignment4.lisp
+    ; pil assignment4.l
     ; (equations (1 2 3 4))
 
 ; This code was derived from http://picolisp.com/wiki/?99pp93
