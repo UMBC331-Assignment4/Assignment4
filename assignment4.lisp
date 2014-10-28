@@ -1,13 +1,18 @@
-; Read command line input
+; TODO:
+    ; Read command line input
+    ; Print "No equation found" when no valid equations are found
+    ; Cite in proper MLA format
+    ; Add more comments, clean up current comments
 
-; Recursive algorithm to get all possible combinations of the operators
+; Authors: Eric Hebert, <insert names here>
+; Run with:
+    ; pil assignment4.lisp
+    ; (equations (1 2 3 4))
 
-; Evaluate each list, stopping when one is true
-; If none are true, then print "No equation found"
+; This code was derived from http://picolisp.com/wiki/?99pp93
 
-; All of this code was copied from http://picolisp.com/wiki/?99pp93
-
-(defun infix (E)
+; Converts a list between infix and prefix notation
+(de infix (E)
    (if (atom E)
       E
       (list
@@ -15,7 +20,8 @@
          (car E)
          (infix (caddr E)) ) ) )
 
-(defun expressions (X)
+; Generate all possible combinations of the expressions
+(de expressions (X)
    (if (cdr X)
       (mapcan
          '((I)
@@ -31,7 +37,8 @@
          (range 1 (dec (length X))) )
       (list (car X)) ) )
 
-(defun equations (Lst)
+; Find all valid expressions that evaluate to true
+(de equations (Lst)
    (use /
       (redef / (A B)
          (and (n0 B) (=0 (% A B)) (/ A B)) )
