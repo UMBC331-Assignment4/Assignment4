@@ -4,12 +4,13 @@
     # Cite in proper MLA format
     # Add more comments, clean up current comments
 
-# Authors: Eric Hebert, <insert names here>
+# Authors: Eric Hebert, Navneet Kaur, Dong Sun, Hamza Saeed
 # Run with:
     # pil assignment4.l
     # (assignment4 (1 2 3 4))
 
 # This code was derived from http://picolisp.com/wiki/?99pp93
+# Source: "PicoLisp Wiki: 99pp93." PicoLisp Wiki: 99pp93. Alexander Burger, 23 July 2010. Web. 28 Oct. 2014.
 
 # Converts a list between infix and prefix notation
 (de infix (expression)
