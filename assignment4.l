@@ -1,7 +1,5 @@
 # TODO:
-    # Read command line input
-    # Print "No equation found" when no valid equations are found
-    # Cite in proper MLA format
+    # Read command line input, or find an easier way to run this
     # Add more comments, clean up current comments
 
 # Authors: Eric Hebert, Navneet Kaur, Dong Sun, Hamza Saeed
