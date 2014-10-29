@@ -4,7 +4,7 @@
     # Cite in proper MLA format
     # Add more comments, clean up current comments
 
-# Authors: Eric Hebert, <insert names here>
+# Authors: Eric Hebert, Dong Sun
 # Run with:
     # pil assignment4.l
     # (assignment4 (1 2 3 4))
